@@ -6,7 +6,7 @@
 
     <groupId>com.alipay.sofa</groupId>
     <artifactId>sofa-rpc-all</artifactId>
-    <version>5.7.9-SNAPSHOT</version>
+    <version>5.7.9.android</version>
 
 
     <name>${project.groupId}:${project.artifactId}</name>
@@ -77,214 +77,214 @@
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-common</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-exception</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-api</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
 
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-client</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-codec-api</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-filter</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-log</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-proxy</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-transport</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
 
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-api-compatible</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-bootstrap-api</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-bootstrap-bolt</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-bootstrap-dubbo</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-bootstrap-grpc</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-bootstrap-http</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-bootstrap-rest</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-codec-sofa-hessian</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-codec-protobuf</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-codec-protostuff</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-codec-msgpack</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-codec-jackson</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-fault-tolerance</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-fault-hystrix</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-log-common-tools</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-registry-consul</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-registry-local</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-registry-zk</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-registry-nacos</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-registry-mesh</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-registry-multicast</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-registry-sofa</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-remoting-bolt</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-remoting-http</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-remoting-resteasy</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-remoting-triple</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-tracer-opentracing</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-tracer-opentracing-resteasy</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-tracer-opentracing-triple</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-metrics-lookout</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
        <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-metrics-micrometer</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-doc-swagger</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-config-apollo</artifactId>
-            <version>${project.version}</version>
+            <version>5.7.9.android</version>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>

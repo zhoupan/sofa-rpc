@@ -14,10 +14,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/**
- * Part of JSR-305
- * <p>
- * JSR 305: Annotations for Software Defect Detection
- * https://jcp.org/en/jsr/detail?id=305
- */
-package javax.annotation;
+package com.alipay.sofa.rpc.context.impl;
+
+import java.lang.management.ManagementFactory;
+
+import com.alipay.sofa.rpc.context.ProcessIdProvider;
+
+public class DefaultProcessIdProvider implements ProcessIdProvider {
+
+    @Override
+    public String getCurrentProcessId() {
+        return ManagementFactory
+            .getRuntimeMXBean()
+            .getName().split("@")[0];
+    }
+}

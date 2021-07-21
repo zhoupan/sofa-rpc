@@ -7,7 +7,7 @@
     <parent>
         <artifactId>sofa-rpc-bootstrap</artifactId>
         <groupId>com.alipay.sofa</groupId>
-        <version>${revision}</version>
+        <version>5.7.9.android</version>
     </parent>
 
     <artifactId>sofa-rpc-bootstrap-grpc</artifactId>
@@ -17,19 +17,9 @@
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-bootstrap-api</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.javassist</groupId>
             <artifactId>javassist</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-core</artifactId>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
@@ -41,7 +31,6 @@
             <artifactId>zkclient</artifactId>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>sofa-rpc-test-common</artifactId>

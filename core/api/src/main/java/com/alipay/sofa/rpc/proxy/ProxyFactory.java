@@ -16,7 +16,6 @@
  */
 package com.alipay.sofa.rpc.proxy;
 
-import com.alipay.sofa.rpc.common.utils.ExceptionUtils;
 import com.alipay.sofa.rpc.core.exception.SofaRpcRuntimeException;
 import com.alipay.sofa.rpc.ext.ExtensionClass;
 import com.alipay.sofa.rpc.ext.ExtensionLoaderFactory;
@@ -42,6 +41,10 @@ public final class ProxyFactory {
      */
     public static <T> T buildProxy(String proxyType, Class<T> clazz, Invoker proxyInvoker) throws Exception {
         try {
+            //优先取ProxyContext设置的实例.
+            if (ProxyContext.getInstance().isProxyExtInstancePresent()) {
+                return ProxyContext.getInstance().getProxyExtInstance().getProxy(clazz, proxyInvoker);
+            }
             ExtensionClass<Proxy> ext = ExtensionLoaderFactory.getExtensionLoader(Proxy.class)
                 .getExtensionClass(proxyType);
             if (ext == null) {
@@ -64,6 +67,10 @@ public final class ProxyFactory {
      */
     public static Invoker getInvoker(Object proxyObject, String proxyType) {
         try {
+            //优先取ProxyContext设置的实例.
+            if (ProxyContext.getInstance().isProxyExtInstancePresent()) {
+                return ProxyContext.getInstance().getProxyExtInstance().getInvoker(proxyObject);
+            }
             ExtensionClass<Proxy> ext = ExtensionLoaderFactory.getExtensionLoader(Proxy.class)
                 .getExtensionClass(proxyType);
             if (ext == null) {

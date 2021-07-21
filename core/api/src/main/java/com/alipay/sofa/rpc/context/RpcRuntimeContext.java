@@ -16,6 +16,12 @@
  */
 package com.alipay.sofa.rpc.context;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.CopyOnWriteArrayList;
+
 import com.alipay.sofa.rpc.base.Destroyable;
 import com.alipay.sofa.rpc.bootstrap.ConsumerBootstrap;
 import com.alipay.sofa.rpc.bootstrap.ProviderBootstrap;
@@ -35,13 +41,6 @@ import com.alipay.sofa.rpc.registry.Registry;
 import com.alipay.sofa.rpc.registry.RegistryFactory;
 import com.alipay.sofa.rpc.server.ServerFactory;
 import com.alipay.sofa.rpc.transport.ClientTransportFactory;
-
-import java.lang.management.ManagementFactory;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * 全局的运行时上下文
@@ -64,9 +63,9 @@ public class RpcRuntimeContext {
     /**
      * 当前进程Id
      */
-    public static final String                                PID                       = ManagementFactory
-                                                                                            .getRuntimeMXBean()
-                                                                                            .getName().split("@")[0];
+    public static final String                                PID                       = RpcContext.getInstance()
+                                                                                            .getProcessIdProvider()
+                                                                                            .getCurrentProcessId();
 
     /**
      * 当前应用启动时间（用这个类加载时间为准）

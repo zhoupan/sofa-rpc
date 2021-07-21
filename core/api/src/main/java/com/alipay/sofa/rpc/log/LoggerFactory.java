@@ -28,11 +28,33 @@ import com.alipay.sofa.rpc.core.exception.SofaRpcRuntimeException;
  */
 public class LoggerFactory {
 
-    /**
-     * 配置的实现类
-     */
-    private static String implClass = RpcConfigs.getStringValue(RpcOptions.LOGGER_IMPL);
+    /** 配置的实现类. */
+    public static String implClass = RpcConfigs.getStringValue(RpcOptions.LOGGER_IMPL);
 
+    /**
+     * Gets the impl class.
+     *
+     * @return the impl class
+     */
+    public static String getImplClass() {
+        return implClass;
+    }
+
+    /**
+     * Sets the impl class.
+     *
+     * @param implClass the new impl class
+     */
+    public static void setImplClass(String implClass) {
+        LoggerFactory.implClass = implClass;
+    }
+
+    /**
+     * Gets the logger.
+     *
+     * @param name the name
+     * @return the logger
+     */
     public static Logger getLogger(String name) {
         try {
             Object logInstance = ClassUtils.forName(implClass, Logger.class.getClassLoader())
@@ -46,11 +68,17 @@ public class LoggerFactory {
         } catch (SofaRpcRuntimeException ex) {
             throw ex;
         } catch (Exception e) {
-            throw new SofaRpcRuntimeException("Error when getLogger of " + name
-                + ", implement is " + implClass + "", e);
+            throw new SofaRpcRuntimeException("Error when getLogger of " + name + ", implement is " + implClass + "",
+                e);
         }
     }
 
+    /**
+     * Gets the logger.
+     *
+     * @param clazz the clazz
+     * @return the logger
+     */
     public static Logger getLogger(Class clazz) {
         try {
             Object logInstance = ClassUtils.forName(implClass, Logger.class.getClassLoader())
@@ -63,8 +91,8 @@ public class LoggerFactory {
         } catch (SofaRpcRuntimeException ex) {
             throw ex;
         } catch (Exception e) {
-            throw new SofaRpcRuntimeException("Error when getLogger of " + clazz.getName()
-                + ", implement is " + implClass + "", e);
+            throw new SofaRpcRuntimeException(
+                "Error when getLogger of " + clazz.getName() + ", implement is " + implClass + "", e);
         }
     }
 }

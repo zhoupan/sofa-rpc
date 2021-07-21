@@ -5,7 +5,7 @@
    
     <groupId>com.alipay.sofa</groupId>
     <artifactId>sofa-rpc-parent</artifactId>
-    <version>${revision}</version>
+    <version>5.7.9.android</version>
     <packaging>pom</packaging>
     <name>[SOFA] - RPC Framework</name>
     <url>http://www.antfin.com</url>
@@ -47,7 +47,7 @@
             <dependency>
                 <groupId>com.alipay.sofa</groupId>
                 <artifactId>sofa-rpc-bom</artifactId>
-                <version>${revision}</version>
+                <version>5.7.9.android</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -56,8 +56,8 @@
 
     <properties>
         <!-- Build args -->
-        <revision>5.7.9-SNAPSHOT</revision>
-        <module.install.skip>true</module.install.skip>
+        <revision>5.7.9.android</revision>
+        <module.install.skip>false</module.install.skip>
         <module.deploy.skip>true</module.deploy.skip>
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <module.jacoco.skip>true</module.jacoco.skip>

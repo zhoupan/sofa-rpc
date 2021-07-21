@@ -181,8 +181,8 @@
                             <excludePackageNames>
                                 com.alipay.sofa.demo.*
                             </excludePackageNames>
-                            <doctitle>SOFA RPC ${project.version} API</doctitle>
-                            <windowtitle>SOFA RPC ${project.version} API</windowtitle>
+                            <doctitle>SOFA RPC 5.7.9.android API</doctitle>
+                            <windowtitle>SOFA RPC 5.7.9.android API</windowtitle>
                         </configuration>
                     </plugin>
                     <plugin>

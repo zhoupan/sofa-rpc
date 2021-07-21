@@ -24,6 +24,10 @@ import com.alipay.sofa.rpc.common.utils.StringUtils;
  * @author <a href="mailto:zhanggeng.zg@antfin.com">GengZhang</a>
  */
 public class SLF4JLoggerImpl implements Logger {
+    public static void use() {
+        LoggerFactory.setImplClass(SLF4JLoggerImpl.class.getName());
+    }
+
     private final org.slf4j.Logger logger;
 
     public SLF4JLoggerImpl(String name) {
